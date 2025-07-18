@@ -15,7 +15,7 @@ WARNING:
 
 USE master;
 GO
---Test git repo
+--Test git reposdkjfsdkehhh
 -- Drop and recreate the 'DataWarehouse' database
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
 BEGIN
