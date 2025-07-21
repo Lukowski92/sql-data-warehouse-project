@@ -13,7 +13,7 @@ begin
 	cst_key,
 	cst_firstname,
 	cst_lastname,
-	cst_material_status,
+	cst_marital_status,
 	cst_gndr,
 	cst_create_date
 	)
@@ -23,10 +23,10 @@ begin
 		cst_key,
 		trim(cst_firstname),
 		trim(cst_lastname),
-		case when upper(trim(cst_material_status))='S' then 'Single'
-			 when upper(trim(cst_material_status))='M' then 'Married'
+		case when upper(trim(cst_marital_status))='S' then 'Single'
+			 when upper(trim(cst_marital_status))='M' then 'Married'
 			 else 'n/a'
-		end cst_material_status, -- normalize martial status values to readable format
+		end cst_marital_status, -- normalize martial status values to readable format
 
 		case when upper(trim(cst_gndr))='F' then 'Female'
 			 when upper(trim(cst_gndr))='M' then 'Male'
